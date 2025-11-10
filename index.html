@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJETO MOBILE REDE SOCIAL</title>
+    <title>Colégio Cívico-Militar Duque de Caxias</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        nav {
+            background-color: #002244;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            background-color: white;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .galeria img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Colégio Cívico-Militar Duque de Caxias</h1>
+        <p>Disciplina, Respeito e Excelência na Educação</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#historia">História</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre o Colégio</h2>
+        <p>
+            O <strong>Colégio Cívico-Militar Duque de Caxias</strong> é uma instituição de ensino que alia a 
+            excelência pedagógica à formação cidadã e disciplinar. Nosso objetivo é promover o 
+            desenvolvimento integral dos alunos, formando cidadãos conscientes, éticos e preparados 
+            para os desafios do futuro.
+        </p>
+    </section>
+
+    <section id="historia">
+        <h2>História</h2>
+        <p>
+            Fundado com o propósito de oferecer uma educação de qualidade baseada em valores cívicos 
+            e morais, o Colégio Duque de Caxias é referência na formação de jovens comprometidos 
+            com o país e o bem comum. Inspirado na figura de Luís Alves de Lima e Silva, o Duque de Caxias, 
+            patrono do Exército Brasileiro, o colégio segue princípios de disciplina, respeito e amor à pátria.
+        </p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="galeria">
+            <img src="https://via.placeholder.com/300x200?text=Fachada+do+Colégio" alt="Fachada do colégio">
+            <img src="https://via.placeholder.com/300x200?text=Formatura+dos+alunos" alt="Formatura dos alunos">
+            <img src="https://via.placeholder.com/300x200?text=Atividades+Cívicas" alt="Atividades cívicas">
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>
+            📍 Endereço: Rua da Educação, 123 - Centro, Sua Cidade - UF<br>
+            ☎ Telefone: (xx) xxxx-xxxx<br>
+            ✉ E-mail: contato@colegioduquedecaxias.edu.br
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Colégio Cívico-Militar Duque de Caxias | Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
