@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colégio Cívico-Militar Duque de Caxias</title>
-    <style>        
+    <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
@@ -76,6 +76,47 @@
             box-shadow: 0 0 5px rgba(0,0,0,0.3);
         }
 
+        /* Novo estilo para os cards dos cursos técnicos */
+        .cursos-tecnicos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .curso-card {
+            background-color: #e6f0ff; /* Fundo azul claro para destaque */
+            border: 1px solid #003366;
+            border-radius: 8px;
+            padding: 20px;
+            width: 45%; /* Ocupa metade do espaço para 2 por linha */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .curso-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .curso-card h3 {
+            color: #002244;
+            margin-top: 0;
+        }
+
+        .curso-info {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+            text-align: left;
+            font-size: 0.95em;
+        }
+
+
         footer {
             background-color: #003366;
             color: white;
@@ -88,8 +129,7 @@
 <body>
 
     <header>
-        <!-- Logo do Duque com borda redonda -->
-        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0A7cIefx2FfdX6HyRqTBFkOJLmJwMEkH6Aw&s">
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0A7cIefx2FfdX6HyRqTBFkOJLmJwMEkH6Aw&s" alt="Logo do Colégio Duque de Caxias">
 
         <h1>Colégio Cívico-Militar Duque de Caxias</h1>
         <p>Disciplina, Respeito e Excelência na Educação 🎓</p>
@@ -106,9 +146,9 @@
     <section id="sobre">
         <h2>Sobre o Colégio</h2>
         <p>
-            🌟O <strong>Colégio Cívico-Militar Duque de Caxias</strong> é uma instituição de ensino que alia a 
-            excelência pedagógica à formação cidadã e disciplinar. Nosso objetivo é promover o 
-            desenvolvimento integral dos alunos, formando cidadãos conscientes, éticos e preparados 
+            🌟O <strong>Colégio Cívico-Militar Duque de Caxias</strong> é uma instituição de ensino que alia a
+            excelência pedagógica à formação cidadã e disciplinar. Nosso objetivo é promover o
+            desenvolvimento integral dos alunos, formando cidadãos conscientes, éticos e preparados
             para os desafios do futuro.
         </p>
     </section>
@@ -116,9 +156,9 @@
     <section id="historia">
         <h2>História</h2>
         <p>
-            📚Fundado com o propósito de oferecer uma educação de qualidade baseada em valores cívicos 
-            e morais, o Colégio Duque de Caxias é referência na formação de jovens comprometidos 
-            com o país e o bem comum. Inspirado na figura de Luís Alves de Lima e Silva, o Duque de Caxias, 
+            📚Fundado com o propósito de oferecer uma educação de qualidade baseada em valores cívicos
+            e morais, o Colégio Duque de Caxias é referência na formação de jovens comprometidos
+            com o país e o bem comum. Inspirado na figura de Luís Alves de Lima e Silva, o Duque de Caxias,
             patrimonio do Exército Brasileiro, o colégio segue princípios de disciplina, respeito e amor à pátria.
         </p>
     </section>
@@ -132,6 +172,50 @@
         </div>
     </section>
 
+    <section id="ensino-tecnico">
+        <h2>Cursos Técnicos Integrados ao Ensino Médio 🚀</h2>
+        <p>
+            O Colégio Duque de Caxias oferece a oportunidade única de iniciar sua **formação técnica a partir do 1º ano do Ensino Médio**!
+            Ao concluir seus estudos, o aluno sai com o **Diploma de Conclusão do Ensino Médio e o Diploma de Técnico**,
+            estando duplamente qualificado e pronto para o mercado de trabalho. Nossos cursos são ministrados por
+            **professores com excelente graduação e pós-graduação**, garantindo a melhor experiência de aprendizado.
+        </p>
+
+        <div class="cursos-tecnicos">
+            <div class="curso-card">
+                <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-49T_o0D0L8Xk8GfM1E3R_8P-L1Jk_o4gA&s" alt="Desenvolvimento de Sistemas - Código e Computador">
+                <p>
+                    Prepare-se para o futuro digital! O curso forma profissionais aptos a projetar,
+                    desenvolver e manter sistemas computacionais, dominando linguagens de programação,
+                    banco de dados e metodologias ágeis. Uma carreira com alta empregabilidade.
+                </p>
+                <div class="curso-info">
+                    <ul>
+                        <li>✨ **Foco:** Programação, lógica e sistemas.</li>
+                        <li>💻 **Mercado:** Desenvolvedor Web, Mobile e Analista de Sistemas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="curso-card">
+                <h3>Técnico em Automação Industrial</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy-5W9v8Z3o7L2bN_YjYy-g2J0Jg7SgO4k2A&s" alt="Automação Industrial - Robótica e Equipamentos">
+                <p>
+                    Torne-se o especialista que o setor produtivo precisa! Você aprenderá a planejar,
+                    instalar e manter sistemas de automação e controle industrial, trabalhando com
+                    robótica, CLP's (Controladores Lógicos Programáveis) e instrumentação.
+                </p>
+                <div class="curso-info">
+                    <ul>
+                        <li>⚙️ **Foco:** Robótica, eletrônica e controle de processos.</li>
+                        <li>🏭 **Mercado:** Técnico em Manutenção, Projetista de Sistemas Automatizados.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contato">
         <h2>Contato</h2>
         <p>
@@ -142,10 +226,6 @@
         </p>
 
     </section>
-</section id="Ensino-Técnico"
-   
-
-
     <footer>
         <p>&copy; 2025 Colégio Cívico-Militar Duque de Caxias | Todos os direitos reservados. @maripoda, @kauagrau, @matheusppr e @krystiangoes</p>
     </footer>
